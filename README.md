@@ -4,6 +4,15 @@ Research code accompanying the manuscript of the same title by **Nik Umar bin Ni
 
 The experiment uses **one active wheeled robot** in a plantation and logistics estate. A Clearpath Husky-derived mobile base supplies simulated wheel, IMU, LiDAR, and camera observations; AMCL, Nav2, and an edge agent estimate its state and perform inspections. A Unitree Go2 quadruped and PX4 X500 drone are parked scene imports without active telemetry or missions. The operator's digital twin draws the surveyed site prior and *received* robot observations. It does not run a second Gazebo world or receive privileged simulator pose. An offline evaluator uses simulator truth only to score localization and physical arrival.
 
+## Paper preprint
+
+The 14-page **author preprint v1 (2 October 2026)** is publicly available:
+
+- [Read or download the paper (PDF)](https://github.com/Avode/freshness-aware-telemetry-public/releases/download/preprint-v1-2026-10-02/Freshness-Aware-Telemetry-Preprint-v1.pdf)
+- [Preprint release, citation, and SHA-256 checksum](https://github.com/Avode/freshness-aware-telemetry-public/releases/tag/preprint-v1-2026-10-02)
+
+This is an author preprint. It has not undergone journal or conference peer review. The release pins the accompanying source snapshot to commit `053c6931be0aad105fe2469c54f6713cca7de3e4`. See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the available code, evidence, and reproduction limits.
+
 ## What is here
 
 | Path | Role |
