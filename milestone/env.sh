@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Source this in every shell used for the isolated milestone.
+FLEETSCOPE_ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+source /opt/ros/humble/setup.bash
+FLEETSCOPE_ASSETS="${FLEETSCOPE_ASSETS:-$FLEETSCOPE_ROOT/assets}"
+FLEETSCOPE_RUNS="${FLEETSCOPE_RUNS:-$FLEETSCOPE_ROOT/runs}"
+FLEETSCOPE_OVERLAY="${FLEETSCOPE_OVERLAY:-$FLEETSCOPE_ASSETS/ros-overlay}"
+export LD_LIBRARY_PATH="$FLEETSCOPE_OVERLAY/opt/ros/humble/lib:$FLEETSCOPE_OVERLAY/usr/lib/x86_64-linux-gnu:${LD_LIBRARY_PATH:-}"
+export AMENT_PREFIX_PATH="$FLEETSCOPE_OVERLAY/opt/ros/humble:${AMENT_PREFIX_PATH:-}"
+export ROS_DOMAIN_ID=47
+export ROS_LOCALHOST_ONLY=1
+export IGN_PARTITION="fleetscope_milestone_${UID}"
+export IGN_IP=127.0.0.1
+export IGN_GAZEBO_RESOURCE_PATH="$FLEETSCOPE_ROOT/models:${IGN_GAZEBO_RESOURCE_PATH:-}"
+export SDF_PATH="$FLEETSCOPE_ROOT/models:${SDF_PATH:-}"
+export OPENBLAS_NUM_THREADS=1
+export OMP_NUM_THREADS=2
+export FLEETSCOPE_ROOT FLEETSCOPE_ASSETS FLEETSCOPE_RUNS FLEETSCOPE_OVERLAY

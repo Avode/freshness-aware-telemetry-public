@@ -1,0 +1,124 @@
+{
+  "run": "autonomy-20260928-120144",
+  "started_wall": 1790568148.3998725,
+  "checks": {
+    "fresh_telemetry": {
+      "passed": true,
+      "details": {
+        "seq": 44,
+        "health": "HEALTHY"
+      }
+    },
+    "camera_freeze_is_warning": {
+      "passed": true,
+      "details": {
+        "detection_wall_s": 2.3262639370077522,
+        "camera_stamp": 9.25
+      }
+    },
+    "camera_capture_does_not_advance": {
+      "passed": true,
+      "details": 9.25
+    },
+    "pose_jump_detected_without_ground_truth": {
+      "passed": true,
+      "details": 2.5
+    },
+    "dashboard_dispatch_moves_robot": {
+      "passed": true,
+      "details": "RUNNING"
+    },
+    "imu_loss_holds_locally": {
+      "passed": true,
+      "details": {
+        "detection_and_stop_wall_s": 4.81555324200599,
+        "reason": "imu_stale"
+      }
+    },
+    "unsafe_resume_rejected": {
+      "passed": true,
+      "details": "IMU still absent"
+    },
+    "recovery_keeps_hold_latched": {
+      "passed": true,
+      "details": {
+        "held": true,
+        "reason": "imu_stale",
+        "armed": true,
+        "release_ready": true,
+        "stamp": 16.178
+      }
+    },
+    "offline_robot_holds_without_dashboard": {
+      "passed": true,
+      "details": {
+        "reason": "imu_stale",
+        "wall_s": 1.2685732539976016
+      }
+    },
+    "offline_hold_physically_stops_robot": {
+      "passed": true,
+      "details": {
+        "settled": true,
+        "settling_sim_s": 2.0500000000000007,
+        "max_distance_after_hold_m": 0.3908198517206089,
+        "final_measured_speed_m_s": 0.0
+      }
+    },
+    "disconnected_view_does_not_leak_local_state": {
+      "passed": true,
+      "details": {
+        "seq": 86
+      }
+    },
+    "stale_dashboard_blocks_commands": {
+      "passed": true,
+      "details": "HTTP 409"
+    },
+    "replay_drains_without_drops": {
+      "passed": true,
+      "details": {
+        "transport": {
+          "queued": 2,
+          "dropped": 0,
+          "capacity": 1500
+        },
+        "replayed": 15
+      }
+    },
+    "all_delivered_packets_survive_web_projection": {
+      "passed": true,
+      "details": {
+        "through_seq": 114,
+        "received": 114,
+        "projected": 114
+      }
+    },
+    "offline_fault_history_delivered": {
+      "passed": true,
+      "details": 31
+    },
+    "historical_camera_and_fault_are_isolated": {
+      "passed": true,
+      "details": {
+        "seq": 49,
+        "camera_stamp": 9.25
+      }
+    },
+    "health_heartbeat_survives_position_loss": {
+      "passed": true,
+      "details": {
+        "first_seq": 119,
+        "later_seq": 121,
+        "envelope_stamp": 24.400000000000002,
+        "unchanged_pose_stamp": 23.494
+      }
+    },
+    "lidar_loss_holds_robot": {
+      "passed": true,
+      "details": "lidar_stale"
+    }
+  },
+  "passed": true,
+  "finished_wall": 1790568205.090785
+}

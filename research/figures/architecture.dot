@@ -1,0 +1,36 @@
+digraph telemetry_architecture {
+  graph [fontname="DejaVu Sans", fontsize=11, bgcolor="white", rankdir=TB, ranksep=0.55, nodesep=0.35, pad=0.18, splines=polyline];
+  node [shape=box, style="rounded,filled", penwidth=1.0, fontname="DejaVu Sans", fontsize=10, margin="0.13,0.11"];
+  edge [fontname="DejaVu Sans", fontsize=8.5, color="#516278", arrowsize=0.65];
+
+  subgraph cluster_ubuntu {
+    label="Ubuntu: simulated environment and robot-side systems";
+    labelloc=t; color="#84afc1"; fillcolor="#f1f8fb"; style="rounded,filled";
+    world [label="Gazebo estate\nphysical and sensor simulation", fillcolor="#d9edf3"];
+    robot [label="ROS 2 sensing and autonomy\nEKF · AMCL · Nav2", fillcolor="#d9edf3"];
+    edge_agent [label="Health and local safety\nSQLite outbox · retry", fillcolor="#d9edf3"];
+    world -> robot [label="camera · IMU · LiDAR · encoders"];
+    robot -> edge_agent [label="reported observations"];
+  }
+
+  broker [label="TLS / MQTT 5\nallowlisted topics", fillcolor="#e6e8f8", color="#a0a7d2"];
+
+  subgraph cluster_mac {
+    label="Mac: no simulator or truth access";
+    labelloc=b; color="#d4a06c"; fillcolor="#fcf7ef"; style="rounded,filled";
+    receiver [label="Durable receiver\nsequence journal", fillcolor="#f8e9d3"];
+    twin [label="Observation projection\npreloaded site survey", fillcolor="#f8e9d3"];
+    dashboard [label="Operator dashboard\nlive state and replay", fillcolor="#f8e9d3"];
+    receiver -> twin [label="committed packets"];
+    twin -> dashboard [label="time-indexed view"];
+  }
+
+  edge_agent -> broker [label="telemetry / status"];
+  broker -> receiver;
+  receiver -> broker [label="application ACK", constraint=false, color="#25856a"];
+  dashboard -> broker [label="bounded commands", constraint=false, color="#aa7238"];
+  broker -> edge_agent [constraint=false, color="#25856a"];
+
+  evaluator [label="Offline evaluator\ntruth used for scoring only", fillcolor="#f4f4f4", color="#a5a5a5", style="rounded,filled,dashed"];
+  world -> evaluator [style=dashed, label="truth", color="#9a9a9a", constraint=false];
+}

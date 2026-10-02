@@ -1,0 +1,35 @@
+# Local model downloads, generated simulation outputs, and run journals.
+/assets/
+/runs/
+/output/
+/autonomy/generated/
+/milestone/generated/
+/models/fleetscope_go2
+/models/fleetscope_husky_kinova
+/models/fleetscope_x500
+/plugins/build/
+
+# Python and editor state.
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+
+# Credentials, local broker settings, and logs must never be committed.
+/handoff/
+**/connection.json
+**/edge.json
+**/*-credentials.json
+**/*.key
+**/*.pem
+**/ca.crt
+*.db
+*.sqlite
+*.sqlite-*
+*.log
+*.zip
+*.tar
+*.tar.gz
+*.blend

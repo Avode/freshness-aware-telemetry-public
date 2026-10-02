@@ -1,0 +1,20 @@
+[
+  {
+    "name": "fleetscope_go2",
+    "links": 42,
+    "joints": 41,
+    "static": true
+  },
+  {
+    "name": "fleetscope_husky_kinova",
+    "links": 34,
+    "joints": 33,
+    "static": true
+  },
+  {
+    "name": "fleetscope_x500",
+    "links": 5,
+    "joints": 4,
+    "static": true
+  }
+]

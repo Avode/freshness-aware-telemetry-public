@@ -1,0 +1,76 @@
+{
+  "run": "autonomy-20260928-112139",
+  "started_wall": 1790566377.8770056,
+  "checks": {
+    "complete_route": {
+      "passed": true,
+      "details": {
+        "status": "SUCCEEDED",
+        "route": "inspection",
+        "request_id": "27e7c92c-6154-48f1-924e-e5b9990baab4",
+        "index": 3,
+        "checkpoints": [
+          {
+            "name": "Warehouse entrance",
+            "pose": [
+              30.0,
+              -61.0,
+              1.5707963267948966
+            ],
+            "status": "REACHED"
+          },
+          {
+            "name": "Collection shelter",
+            "pose": [
+              -18.0,
+              3.0,
+              1.5707963267948966
+            ],
+            "status": "REACHED"
+          },
+          {
+            "name": "Depot forecourt",
+            "pose": [
+              -12.0,
+              -33.0,
+              -1.5707963267948966
+            ],
+            "status": "REACHED"
+          }
+        ],
+        "stamp": 439.964,
+        "distance_remaining_m": 0.4000016152858734,
+        "recoveries": 1
+      }
+    }
+  },
+  "request_id": "27e7c92c-6154-48f1-924e-e5b9990baab4",
+  "start_stamp": 71.638,
+  "accuracy": {
+    "samples": 1742,
+    "rmse_m": 1.9748320004983637,
+    "max_m": 3.8753631159487076,
+    "p95_m": 3.673454115909429,
+    "arrivals": [
+      {
+        "name": "Warehouse entrance",
+        "physical_error_m": 0.5267517986161736,
+        "stamp_gap_s": 0.0619999999999834
+      },
+      {
+        "name": "Collection shelter",
+        "physical_error_m": 3.6361248942327733,
+        "stamp_gap_s": 0.04399999999998272
+      },
+      {
+        "name": "Depot forecourt",
+        "physical_error_m": 0.4860097270278653,
+        "stamp_gap_s": 0.004000000000019099
+      }
+    ],
+    "note": "Measured by separate ground-truth evaluator; completion is not a precision-positioning claim"
+  },
+  "amcl_max_beams": 1081,
+  "passed": true,
+  "finished_wall": 1790567383.0022483
+}

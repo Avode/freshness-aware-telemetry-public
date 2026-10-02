@@ -1,0 +1,46 @@
+{
+  "record_type": "historical single-run summary from recorded Ubuntu-side files",
+  "run_id": "autonomy-20260928-161113",
+  "source_files": [
+    "mqtt-gateway-status.json",
+    "edge-status.json",
+    "edge-commands.sqlite (one command row)",
+    "mission-events.jsonl"
+  ],
+  "gateway_final": {
+    "telemetry_publication_messages": 3961,
+    "valid_mac_application_ack_messages": 3961,
+    "commands_forwarded": 1,
+    "rejected": 0,
+    "queue_overflow": 0,
+    "broker_connected": true,
+    "edge_session_fresh": true,
+    "last_ack_to_status_wall_s": 0.046726
+  },
+  "edge_final": {
+    "queued": 0,
+    "dropped": 0,
+    "acked": 3961,
+    "sent_including_retries": 3968,
+    "last_sensor_stamp_sim_s": 779.96
+  },
+  "remote_command": {
+    "action": "start",
+    "route": "quick",
+    "result_status": "ACKNOWLEDGED",
+    "result_reason": "Inspection accepted",
+    "request_matches_mission_events": true
+  },
+  "mission": {
+    "checkpoints_reached_count": 3,
+    "final_event": "completed",
+    "final_status": "SUCCEEDED",
+    "final_stamp_sim_s": 182.994
+  },
+  "limitations": [
+    "Counters are cumulative messages and include retransmissions or duplicate application receipts; they are not unique-packet counts.",
+    "This summary does not contain the full gateway packet log, Mac SQLite journal, or Mac browser audit.",
+    "The separately reported approximately 19 min 52 s wall duration depends on service and broker journals that are not included here.",
+    "One run does not support a reliability distribution or confidence interval."
+  ]
+}

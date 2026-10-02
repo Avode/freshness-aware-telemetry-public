@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this research code, please cite the software and the accompanying manuscript."
+title: "Freshness-Aware Telemetry for an Observation-Driven Mobile Robot Digital Twin: Research Code"
+abstract: >-
+  Linux-side Gazebo and ROS 2 research code for freshness-aware mobile-robot
+  telemetry, durable delivery, received-state digital-twin projection, and a
+  local command center, with selected simulation evidence.
+authors:
+  - given-names: "Nik Umar"
+    name-particle: "bin"
+    family-names: "Nik Mohamed Nizan"
+    affiliation: "Independent Researcher"
+keywords:
+  - mobile robotics
+  - telemetry
+  - digital twin
+  - freshness
+  - Gazebo
+  - ROS 2

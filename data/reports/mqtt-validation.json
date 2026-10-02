@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "scope": "Ubuntu local test receiver over real MQTT/TLS; not a Mac LAN test",
+  "run_id": "autonomy-20260928-130150",
+  "checks": [
+    {
+      "check": "TLS authenticated, real heartbeat and telemetry received",
+      "passed": true
+    },
+    {
+      "check": "Broker receipt does not clear edge outbox",
+      "passed": true
+    },
+    {
+      "check": "Durable receiver ACKs drain real edge backlog",
+      "passed": true
+    },
+    {
+      "check": "Retained and expired commands rejected before robot dispatch",
+      "passed": true
+    },
+    {
+      "check": "Local robot sensor health ready",
+      "passed": true
+    },
+    {
+      "check": "Hold acknowledged through received telemetry",
+      "passed": true
+    },
+    {
+      "check": "Duplicate command UUID recorded only once at robot",
+      "passed": true
+    },
+    {
+      "check": "Local supervisor permits hold release",
+      "passed": true
+    },
+    {
+      "check": "Release acknowledged; robot motion hold cleared",
+      "passed": true
+    },
+    {
+      "check": "Receiver outage buffers observations on the robot",
+      "passed": true
+    },
+    {
+      "check": "Reconnect restores telemetry and drains buffered observations",
+      "passed": true
+    },
+    {
+      "check": "Duplicate packet retries deduplicated by durable receiver",
+      "passed": true
+    }
+  ],
+  "unique_packets": 529,
+  "duplicates": 261,
+  "final_edge": {
+    "run_id": "autonomy-20260928-130150",
+    "link_up": true,
+    "queued": 13,
+    "dropped": 0,
+    "acked": 1655,
+    "sent_including_retries": 18224,
+    "sensor_stamps": {
+      "imu": 265.63,
+      "camera": 265.5,
+      "lidar": 265.5,
+      "estimate": 264.894
+    },
+    "updated_wall": 1790572033.544379
+  }
+}

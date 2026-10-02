@@ -1,0 +1,100 @@
+{
+  "old_run": "autonomy-20260928-130735",
+  "observation": "All 12 blocking packets had IMU stamps ahead of their envelope and no receipt ACKs during a read-only trace. Mac-side rejection logs were unavailable; the exact receiver rejection reason was not directly inspected.",
+  "diagnostic": {
+    "oldest_before": [
+      10533,
+      10534,
+      10538,
+      10559,
+      10573,
+      10591,
+      10610,
+      10630,
+      10651,
+      11543,
+      12371,
+      12916
+    ],
+    "oldest_packet_delivery": [
+      {
+        "seq": 10533,
+        "telemetry_copies": 14,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10534,
+        "telemetry_copies": 14,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10538,
+        "telemetry_copies": 14,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10559,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10573,
+        "telemetry_copies": 14,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10591,
+        "telemetry_copies": 14,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10610,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10630,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 10651,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 11543,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 12371,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      },
+      {
+        "seq": 12916,
+        "telemetry_copies": 13,
+        "mac_acks_seen": 0
+      }
+    ],
+    "queue_before": 547,
+    "queue_after": 598,
+    "ack_delta": 0,
+    "rviz": "closed during this 15-second check"
+  },
+  "timestamp_examples": [
+    {
+      "seq": 12916,
+      "envelope_stamp": 2583.6200000000003,
+      "imu_stamp": 2583.65,
+      "imu_lead_ms": 30.0
+    }
+  ],
+  "changes": [
+    "Envelope capture-through watermark preserves original observation timestamps.",
+    "Fresh observations have reserved send capacity; old retries rotate and back off to at most once per 15 seconds.",
+    "RViz runs at 10 FPS and lower scheduling priority."
+  ],
+  "old_recording_preserved": true
+}

@@ -1,0 +1,169 @@
+{
+  "run_id": "autonomy-20260928-141342",
+  "scope": "Real Mac receipt ACKs and local RViz with both GUI viewers open; diagnostic subscribes only, publishes no application ACKs",
+  "observations": {
+    "packets": 103,
+    "timestamps_ahead_of_envelope": 0,
+    "camera_packets": 41,
+    "imu_packets": 103
+  },
+  "max_queue": 5,
+  "max_rviz_pose_age_sim_s": 0.43200000000000216,
+  "mac_ack_delta": 97,
+  "first": {
+    "wall": 1790576120.0346007,
+    "queued": 1,
+    "dropped": 0,
+    "mac_acks": 304,
+    "rviz_state": "LIVE",
+    "rviz_pose_age_sim_s": 0.2260000000000062,
+    "rviz_arrival_age_wall_s": 0.0843810049991589
+  },
+  "last": {
+    "wall": 1790576148.0641649,
+    "queued": 1,
+    "dropped": 0,
+    "mac_acks": 401,
+    "rviz_state": "LIVE",
+    "rviz_pose_age_sim_s": 0.2740000000000009,
+    "rviz_arrival_age_wall_s": 0.316772628997569
+  },
+  "samples": [
+    {
+      "wall": 1790576120.0346007,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 304,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.2260000000000062,
+      "rviz_arrival_age_wall_s": 0.0843810049991589
+    },
+    {
+      "wall": 1790576122.0368242,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 310,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.3059999999999974,
+      "rviz_arrival_age_wall_s": 0.2222008299868321
+    },
+    {
+      "wall": 1790576124.038953,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 317,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.3120000000000047,
+      "rviz_arrival_age_wall_s": 0.22625472400977742
+    },
+    {
+      "wall": 1790576126.0408406,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 324,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.29999999999999716,
+      "rviz_arrival_age_wall_s": 0.23915582599875052
+    },
+    {
+      "wall": 1790576128.042851,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 331,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.26599999999999113,
+      "rviz_arrival_age_wall_s": 0.17480763999628834
+    },
+    {
+      "wall": 1790576130.0448668,
+      "queued": 5,
+      "dropped": 0,
+      "mac_acks": 335,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.43200000000000216,
+      "rviz_arrival_age_wall_s": 0.35052791400812566
+    },
+    {
+      "wall": 1790576132.0477319,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 346,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.35999999999999943,
+      "rviz_arrival_age_wall_s": 0.33322790400416125
+    },
+    {
+      "wall": 1790576134.049853,
+      "queued": 0,
+      "dropped": 0,
+      "mac_acks": 349,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.28999999999999204,
+      "rviz_arrival_age_wall_s": 0.0004067209956701845
+    },
+    {
+      "wall": 1790576136.0518475,
+      "queued": 0,
+      "dropped": 0,
+      "mac_acks": 360,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.24800000000000466,
+      "rviz_arrival_age_wall_s": 0.2859154089965159
+    },
+    {
+      "wall": 1790576138.05402,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 367,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.24200000000000443,
+      "rviz_arrival_age_wall_s": 0.2775614660058636
+    },
+    {
+      "wall": 1790576140.0558774,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 374,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.26200000000000045,
+      "rviz_arrival_age_wall_s": 0.28700979000132065
+    },
+    {
+      "wall": 1790576142.057854,
+      "queued": 2,
+      "dropped": 0,
+      "mac_acks": 381,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.3160000000000025,
+      "rviz_arrival_age_wall_s": 0.2921107430011034
+    },
+    {
+      "wall": 1790576144.0598433,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 388,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.19400000000000261,
+      "rviz_arrival_age_wall_s": 0.08362364499771502
+    },
+    {
+      "wall": 1790576146.0618727,
+      "queued": 0,
+      "dropped": 0,
+      "mac_acks": 394,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.28600000000000136,
+      "rviz_arrival_age_wall_s": 0.28304877001210116
+    },
+    {
+      "wall": 1790576148.0641649,
+      "queued": 1,
+      "dropped": 0,
+      "mac_acks": 401,
+      "rviz_state": "LIVE",
+      "rviz_pose_age_sim_s": 0.2740000000000009,
+      "rviz_arrival_age_wall_s": 0.316772628997569
+    }
+  ],
+  "passed": true
+}

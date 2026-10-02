@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "protocol_version": 1,
+  "site_id": "plantation_estate",
+  "robot_id": "husky_01",
+  "run_id": "example-run-not-live",
+  "session_id": "5b4132bc-6595-4a95-a962-3c1f1dc9a18f",
+  "heartbeat_seq": 2,
+  "online": true,
+  "edge_wall_time": 1790571601.0,
+  "capture_time": 10.2,
+  "clock_advancing": true,
+  "latest_seq": 50,
+  "map_id": "plantation-estate-survey-v1",
+  "map_sha256": "c7dfa1f7f9ab46b2e195a6bed4786cc635e4a8522d22309503a142cd4b225f29",
+  "frame_id": "estate",
+  "calibration_id": "husky-front-lidar-v1",
+  "lidar_from_reported_base": {
+    "translation_m": [
+      0.48,
+      0.0,
+      0.42
+    ],
+    "yaw_rad": 0.0
+  },
+  "gateway_session_id": "example-gateway-session"
+}

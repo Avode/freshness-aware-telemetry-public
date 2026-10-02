@@ -1,0 +1,18 @@
+{
+  "px4_models": {
+    "url": "https://github.com/PX4/PX4-gazebo-models.git",
+    "commit": "5577035667afb4b63fe1f966fb1a58bbb05d905b"
+  },
+  "clearpath_common": {
+    "url": "https://github.com/clearpathrobotics/clearpath_common.git",
+    "commit": "5c5ec97ee0245d8543aeb29115e01d3c0f38900e"
+  },
+  "kortex": {
+    "url": "https://github.com/Kinovarobotics/ros2_kortex.git",
+    "commit": "116d87ae595c791ba7ae32201b88693a3ba02324"
+  },
+  "unitree_ros": {
+    "url": "https://github.com/unitreerobotics/unitree_ros.git",
+    "commit": "ccfc6fd8430a17ba3dacef9a1e2faf64ff3b0aee"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "estate_models": 127,
+  "palms": 64,
+  "robots": [
+    {
+      "model": "fleetscope_go2",
+      "links": 42,
+      "joints": 41
+    },
+    {
+      "model": "fleetscope_husky_kinova",
+      "links": 34,
+      "joints": 33
+    },
+    {
+      "model": "fleetscope_x500",
+      "links": 5,
+      "joints": 4
+    }
+  ],
+  "checked_asset_references": 199,
+  "missing_assets": [],
+  "controllers": false,
+  "telemetry": false
+}

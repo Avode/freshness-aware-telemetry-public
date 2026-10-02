@@ -1,0 +1,7 @@
+newmtl surface
+Ka 0.4 0.24 0.11
+Kd 0.4 0.24 0.11
+Ks 0.03 0.03 0.03
+Ns 4
+d 1
+illum 2

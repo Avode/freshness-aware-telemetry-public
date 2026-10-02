@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "site_id": "plantation_estate",
+  "map_id": "plantation-estate-survey-v1",
+  "map_file": "scene.json",
+  "map_sha256": "c7dfa1f7f9ab46b2e195a6bed4786cc635e4a8522d22309503a142cd4b225f29",
+  "provenance": "Preloaded survey prior derived from project CAD/site layout; not robot-discovered observations.",
+  "frame": {
+    "id": "estate",
+    "units": "metres",
+    "angles": "radians",
+    "axes": "Local Cartesian XY; positive yaw counterclockwise from +X; not georeferenced."
+  },
+  "robots": [
+    {
+      "robot_id": "husky_01",
+      "type": "wheeled_amr",
+      "calibration_id": "husky-front-lidar-v1",
+      "lidar_from_reported_base": {
+        "translation_m": [
+          0.48,
+          0.0,
+          0.42
+        ],
+        "yaw_rad": 0.0
+      },
+      "reported_pose_frame": "estate"
+    }
+  ],
+  "notes": [
+    "Robot registration and sensor calibration do not assert a live connection or location.",
+    "Go2 and X500 have no active telemetry in the present milestone.",
+    "SLAM grids require an explicit received/declared frame transform before overlay."
+  ]
+}
